@@ -1,7 +1,7 @@
 const FoodData = [
     {
       id: 1,
-      img: "//img.freepik.com/free-photo/seafood-pizza_74190-5944.jpg?w=996&t=st=1693062328~exp=1693062928~hmac=53fd9ad496580db41c6ca8066510cd89c6b0a0389de8bb6b875a78a1eda09cb5",
+      img: "https://w7.pngwing.com/pngs/384/1010/png-transparent-california-style-pizza-sicilian-pizza-bacon-ham-bacon-onion-pizza-barbecue-food-baking-thumbnail.png",
       name: "Onion Pizza",
       price: 150,
       desc: "A delicious pizza topped with fresh onions for a delightful flavor combination. This pizza is perfect for onion lovers and offers a unique twist on the classic pizza experience. Enjoy the perfect blend of cheesy goodness and the sharp taste of onions in every bite. Whether you're sharing with friends or enjoying it all to yourself, this Onion Pizza is sure to satisfy your pizza cravings.",
@@ -10,7 +10,7 @@ const FoodData = [
     },
     {
       id: 2,
-      img: "https://images.unsplash.com/photo-1576458088443-04a19bb13da6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+      img: "https://w7.pngwing.com/pngs/526/624/png-transparent-california-style-pizza-sicilian-pizza-pizza-margherita-italian-cuisine-pizza-thumbnail.png",
       name: "7 cheese-Pizza",
       price: 150,
       desc: "A delicious pizza topped with fresh onions for a delightful flavor combination. This pizza is perfect for onion lovers and offers a unique twist on the classic pizza experience. Enjoy the perfect blend of cheesy goodness and the sharp taste of onions in every bite. Whether you're sharing with friends or enjoying it all to yourself, this Onion Pizza is sure to satisfy your pizza cravings.",
@@ -136,7 +136,7 @@ const FoodData = [
     },
     {
       id: 16,
-      img: "https://w7.pngwing.com/pngs/47/171/png-transparent-chinese-noodles-hot-and-sour-soup-risotto-lomi-lamian-slippery-mushrooms-risotto-dusi-soup-food-recipe-thumbnail.png",
+      img: "https://w7.pngwing.com/pngs/390/162/png-transparent-spaghetti-alla-puttanesca-pasta-carbonara-risotto-al-dente-bowl-of-pasta-food-animals-recipe-thumbnail.png",
       name: "Mushroom Risotto",
       price: 175,
       desc: "Indulge in creamy and flavorful mushroom risotto, made with Arborio rice, sautéed mushrooms, and a touch of Parmesan cheese. A comforting and sophisticated dinner choice.",
@@ -163,7 +163,7 @@ const FoodData = [
     },
     {
       id: 19,
-      img: "https://w7.pngwing.com/pngs/816/163/png-transparent-grilled-skewered-meat-bakery-paneer-tikka-indian-cuisine-vegetarian-cuisine-cake-food-baking-cake-decorating-thumbnail.png",
+      img: "https://w7.pngwing.com/pngs/756/585/png-transparent-pakistani-cuisine-indian-cuisine-paneer-tikka-biryani-mediterranean-cuisine-menu-food-recipe-chicken-thumbnail.png",
       name: "Paneer Tikka Skewers",
       price: 130,
       desc: "Enjoy succulent pieces of marinated paneer (Indian cottage cheese) skewered and grilled to perfection. Served with mint chutney, these paneer tikka skewers offer a flavorful and aromatic Indian snack experience.",
@@ -188,5 +188,42 @@ const FoodData = [
       category: "Snacks",
       rating: 4.8,
     },
+    {
+      id: 22,
+      img: "https://w7.pngwing.com/pngs/816/326/png-transparent-calzone-chicago-style-pizza-buffalo-wing-hamburger-onions-food-recipe-cheese-thumbnail.png",
+      name: "Stuffed Garlic Bread",
+      price: 149,
+      desc: "Garlic bread (also called garlic toast) consists of bread (usually a baguette, sour dough, or bread such as ciabatta), topped with garlic and occasionally olive oil or butter and may include additional herbs, such as oregano or chives.",
+      category: "Snacks",
+      rating: 4.9,
+    },
+    {
+      id: 23,
+      img: "https://w7.pngwing.com/pngs/421/956/png-transparent-pasta-served-in-bowl-tagliatelle-fettuccine-alfredo-carbonara-pasta-pizza-spagetti-pasta-cream-food-recipe-thumbnail.png",
+      name: "Cheesy Mac",
+      price: 139,
+      desc: "Mac and cheese is a rich and creamy dish consisting of macaroni pasta mixed with a cheesy sauce. It's particularly popular in the United States",
+      category: "Snacks",
+      rating: 4.8,
+    },
+    {
+      id: 24,
+      img: "https://5.imimg.com/data5/PB/PF/MY-24590086/choco-lava-cake.jpg",
+      name: "Choco Lava Cake",
+      price: 99,
+      desc: "Chocolate Lava Cake is a small, individual-sized cake. The center is slightly undercooked, on purpose, resulting in a gooey, melty, and decadent treat that oozes out when you cut into it. Chocolate Lava Cake is the perfect, romantic dessert for Valentine's Day or for when you're trying to impress.",
+      category: "Deserts",
+      rating: 4.9,
+    },
+    {
+      id: 25,
+      img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT754MB8M2IgxSSL7zxlfPXj1WdGKezGgwrXijJofQD8KsOvx0bs2v-DfK5ZWMqct_l77o&usqp=CAU",
+      name: " Red velvet lava Cake",
+      price: 99,
+      desc: "Red velvet Lava Cake is a small, individual-sized cake. The center is slightly undercooked, on purpose, resulting in a gooey, melty, and decadent treat that oozes out when you cut into it. Chocolate Lava Cake is the perfect, romantic dessert for Valentine's Day or for when you're trying to impress.",
+      category: "Deserts",
+      rating: 4.9,
+    },
+    
   ];
   export default FoodData;

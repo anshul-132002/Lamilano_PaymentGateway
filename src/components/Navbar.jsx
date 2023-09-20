@@ -17,11 +17,12 @@ const Navbar = () => {
           <h1 className="text-3xl font-bold">La-Milano Pizzza's</h1>
         </div>
         <div>
-          <img
-            src="/src/assets/lm1.png"
-            alt="Pizza"
-            className="w-20 h-20 m-10" // Adjust sizing as needed
-          />
+          
+        <img
+  src="/src/assets/lm.jpg"
+  alt="Pizza"
+  className="w-32 h-32 p-2 m-2"
+/>
         </div>
       </div>
       <div>

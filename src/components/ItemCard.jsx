@@ -13,7 +13,7 @@ const ItemCard = ({ id, name, qty, price, img }) => {
   const dispatch = useDispatch();
 
   return (
-    <div className="flex gap-2 shadow-md rounded-lg p-2 mb-3">
+    <div className="flex gap-3 shadow-md rounded-lg p-2 mb-3">
       <MdDelete
         onClick={() => {
           dispatch(removeFromCart({ id, img, name, price, qty }));
@@ -21,7 +21,7 @@ const ItemCard = ({ id, name, qty, price, img }) => {
             icon: "👋",
           });
         }}
-        className="absolute right-7 text-gray-600 cursor-pointer"
+        className="absolute right-10 text-gray-600 cursor-pointer"
       />
       <img src={img} alt="" className="w-[50px] h-[50px] " />
       <div className="leading-5">
