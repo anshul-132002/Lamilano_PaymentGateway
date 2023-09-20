@@ -16,7 +16,9 @@ const Cart = () => {
   );
 
   const navigate = useNavigate();
-
+  const handleCheckoutClick = () => {
+    navigate("/address"); // Redirect to the address input page
+  };
   return (
     <>
       <div
@@ -58,8 +60,8 @@ const Cart = () => {
           </h3>
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
           <button
-            onClick={() => navigate("/success")}
-            className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
+              onClick={handleCheckoutClick}
+              className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
           >
             Checkout
           </button>
