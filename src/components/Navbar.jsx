@@ -21,7 +21,7 @@ const Navbar = () => {
         <img
   src="https://lamilano.pizza/wp-content/themes/accreteinfo/img/logo.png"
   alt="Pizza"
-  className="w-32 h-32 p-5 m-5"
+  className="w-32 h-32 p-3 m-3"
 />
         </div>
       </div>
@@ -30,10 +30,10 @@ const Navbar = () => {
           type="search"
           name="search"
           id=""
-          placeholder="Search here"
+          placeholder="Search here !"
           autoComplete="off"
           onChange={(e) => dispatch(setSearch(e.target.value))}
-          className="p-3 border border-gray-400 text-sm rounded-lg outline-none w-full lg:w-[25vw]"
+          className="p-4 border border-gray-400 text-sm rounded-lg outline-none w-full lg:w-[25vw]"
         />
       </div>
     </nav>

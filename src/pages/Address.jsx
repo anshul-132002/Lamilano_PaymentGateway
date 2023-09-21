@@ -21,9 +21,22 @@ const AddressInputPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    navigate("/success");
+    if (
+      formData.firstname === "" ||
+      formData.lastname === "" ||
+      formData.street === "" ||
+      formData.city === "" ||
+      formData.state === "" ||
+      formData.postalCode === ""
+    ) {
+      // Handle the case where one or more fields are empty
+      alert("Please fill in all required fields");
+    } else {
+      // Navigate to the success page since all required fields are filled
+      navigate("/success");
+    }
   };
-
+ 
   return (
     <div className="container">
       <div
@@ -424,6 +437,7 @@ const AddressInputPage = () => {
               value={formData.city}
               onChange={handleChange}
             />
+            <option value=""></option>
           </label>
           <label className="field">
             <span className="field__label" htmlFor="state">

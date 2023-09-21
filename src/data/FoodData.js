@@ -218,7 +218,7 @@ const FoodData = [
     {
       id: 25,
       img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT754MB8M2IgxSSL7zxlfPXj1WdGKezGgwrXijJofQD8KsOvx0bs2v-DfK5ZWMqct_l77o&usqp=CAU",
-      name: " Red velvet lava Cake",
+      name: " Red velvet Cake",
       price: 99,
       desc: "Red velvet Lava Cake is a small, individual-sized cake. The center is slightly undercooked, on purpose, resulting in a gooey, melty, and decadent treat that oozes out when you cut into it. Chocolate Lava Cake is the perfect, romantic dessert for Valentine's Day or for when you're trying to impress.",
       category: "Deserts",
