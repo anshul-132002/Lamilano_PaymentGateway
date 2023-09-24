@@ -16,9 +16,58 @@ const Cart = () => {
   );
 
   const navigate = useNavigate();
-  const handleCheckoutClick = () => {
-    navigate("/address"); // Redirect to the address input page
+
+  const handleCheckoutClick = async () => {
+    const response = await fetch("http://localhost:3000/payment", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+
+      body: JSON.stringify({
+        amount: totalPrice,
+      }),
+    });
+
+    const orderData = await response.json();
+    console.log(orderData);
+    // Initialize Razorpay with your options
+    const options = {
+      key: "rzp_test_ZJAL1yv3qWVFKs",
+      amount: totalPrice * 100, // Amount in paise
+      currency: "INR",
+      name: "LaMilano Pizzaaa's",
+     description: ItemCard.desc,
+      image: "https://cdn.pixabay.com/photo/2022/06/07/14/15/food-7248455_1280.png",
+      order_id: orderData.id,
+      handler: function () {
+  
+        // Payment successful
+
+        navigate("/address");
+      },
+      prefill: {
+        name: "Anshul Shrivas",
+        email: "anshulshrivas2002@gmail.com",
+        contact: "7000084692",
+      },
+      theme: {
+        color: "#cd0000",
+      },
+    };
+
+    const rzp1 = new Razorpay(options);
+
+    rzp1.on("payment.failed", function (response) {
+      // Payment failed
+      setError(response.error.description);
+      alert("Payment failed! " + response.error.description);
+      console.log(response.error.description);
+    });
+
+    rzp1.open();
   };
+
   return (
     <>
       <div
@@ -60,8 +109,9 @@ const Cart = () => {
           </h3>
           <hr className="w-[90vw] lg:w-[18vw] my-2" />
           <button
-              onClick={handleCheckoutClick}
-              className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
+            id="rzp-button1"
+            onClick={handleCheckoutClick}
+            className="bg-green-500 font-bold px-3 text-white py-2 rounded-lg w-[90vw] lg:w-[18vw] mb-5"
           >
             Checkout
           </button>

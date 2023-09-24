@@ -21,7 +21,7 @@ const Navbar = () => {
         <img
   src="https://lamilano.pizza/wp-content/themes/accreteinfo/img/logo.png"
   alt="Pizza"
-  className="w-32 h-32 p-3 m-3"
+  className="w-32 h-32 p-2 m-2"
 />
         </div>
       </div>
