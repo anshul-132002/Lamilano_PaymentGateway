@@ -7,8 +7,10 @@ import { UserServiceBase } from "./base/user.service.base";
 export class UserService extends UserServiceBase {
   constructor(
     protected readonly prisma: PrismaService,
+    protected readonly passwordService: PasswordService,
+    protected readonly passwordService: PasswordService,
     protected readonly passwordService: PasswordService
   ) {
-    super(prisma, passwordService);
+    super(prisma, passwordService, passwordService, passwordService);
   }
 }
